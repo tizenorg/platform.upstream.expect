@@ -8,8 +8,8 @@ would appreciate credit if you use this file or parts of it.
 
 #include <tcl.h> /* For _ANSI_ARGS_ */
 
-int exp_window_size_set();
-int exp_window_size_get();
+void exp_window_size_set();
+void exp_window_size_get();
 
 void  exp_win_rows_set    _ANSI_ARGS_ ((char* rows));
 char* exp_win_rows_get    _ANSI_ARGS_ ((void));

@@ -13,6 +13,7 @@ would appreciate credit if this program or parts of it are used.
 #include <stdio.h>
 #include <signal.h>
 #include <sys/types.h>
+#include <string.h>
 
 #ifdef HAVE_SYS_WAIT_H
 #include <sys/wait.h>

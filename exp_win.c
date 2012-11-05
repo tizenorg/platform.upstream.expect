@@ -78,7 +78,7 @@ typedef struct {
 static exp_winsize winsize = {0, 0};
 static exp_winsize win2size = {0, 0};
 
-int exp_window_size_set(fd)
+void exp_window_size_set(fd)
 int fd;
 {
 #ifdef TIOCSWINSZ
@@ -89,7 +89,7 @@ int fd;
 #endif
 }
 
-int exp_window_size_get(fd)
+void exp_window_size_get(fd)
 int fd;
 {
 #ifdef TIOCGWINSZ
@@ -142,7 +142,7 @@ exp_win_columns_get()
  * separate copy of everything above - used for handling user stty requests
  */
 
-int exp_win2_size_set(fd)
+void exp_win2_size_set(fd)
 int fd;
 {
 #ifdef TIOCSWINSZ
@@ -153,7 +153,7 @@ int fd;
 #endif
 }
 
-int exp_win2_size_get(fd)
+void exp_win2_size_get(fd)
 int fd;
 {
 #ifdef TIOCGWINSZ
