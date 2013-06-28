@@ -9,6 +9,7 @@ License:        SUSE-Public-Domain
 Group:          Development/Languages/Tcl
 Source:         %{name}%{version}.tar.gz
 Source1:        expect-rpmlintrc
+Source1001: 	expect.manifest
 
 %description
 Expect is a tool primarily for automating interactive applications,
@@ -31,6 +32,7 @@ expect package loaded.
 
 %prep
 %setup -q -n %name%version
+cp %{SOURCE1001} .
 
 %build
 autoreconf
@@ -57,6 +59,7 @@ rm $RPM_BUILD_ROOT%_prefix/bin/*passwd
 rm $RPM_BUILD_ROOT%_mandir/*/*passwd*
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %_prefix/bin/*
 %_libdir/tcl/*
@@ -64,6 +67,7 @@ rm $RPM_BUILD_ROOT%_mandir/*/*passwd*
 %doc %_mandir/man1/*
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %_includedir/*
 %doc %_mandir/man3/*
