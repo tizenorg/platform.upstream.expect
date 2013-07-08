@@ -1,0 +1,8 @@
+Change-Id: I579d1c972c9603cfc5bdfad2a1397ae1ba4cbb2d
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:39 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4754
+Project: platform/upstream/expect
+Branch: refs/heads/tizen
